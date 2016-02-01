@@ -73,16 +73,16 @@ double LaunchHumanCannonball(double initial_velocity, double launch_angle) {
   // (6) Return horizontal/x distance
   return x_distance;
 }
-int main()
-{
-    int quarters=0;
-    int dimes=0;
-    int nickels=0;
-    int pennies=0;
-    MakeChange(182,quarters,dimes,nickels,pennies);
-    cout<<"you have "<<quarters<<" quarters "<< dimes<<" dimes "<<nickels<<" nickels and "<<pennies<<" pennies"<<endl;
-    LaunchHumanCannonball(182,42);
-    cout<<"the human cannonball traveled "<<LaunchHumanCannonball(182,42)<<"meters"<<endl;
-}
+// int main()
+// {
+//     int quarters=0;
+//     int dimes=0;
+//     int nickels=0;
+//     int pennies=0;
+//     MakeChange(182,quarters,dimes,nickels,pennies);
+//     cout<<"you have "<<quarters<<" quarters "<< dimes<<" dimes "<<nickels<<" nickels and "<<pennies<<" pennies"<<endl;
+//     LaunchHumanCannonball(182,42);
+//     cout<<"the human cannonball traveled "<<LaunchHumanCannonball(182,42)<<"meters"<<endl;
+// }
 
 
