@@ -26,8 +26,7 @@
  */
 void MakeChange(int initial_value, int &quarters, int &dimes, int &nickels,
                 int &pennies) {
-  cout<<"how much money do you have? enter in whole numbers"<<endl;
-  cin>>initial_value;
+ 
   quarters=initial_value/25;
   initial_value=initial_value-(quarters*25);
   dimes=initial_value/10;
@@ -35,6 +34,7 @@ void MakeChange(int initial_value, int &quarters, int &dimes, int &nickels,
   nickels=initial_value/5;
   initial_value=initial_value-(nickels*5);
   pennies=initial_value;
+  
   
 }
 
@@ -73,4 +73,16 @@ double LaunchHumanCannonball(double initial_velocity, double launch_angle) {
   // (6) Return horizontal/x distance
   return x_distance;
 }
+int main()
+{
+    int quarters=0;
+    int dimes=0;
+    int nickels=0;
+    int pennies=0;
+    MakeChange(182,quarters,dimes,nickels,pennies);
+    cout<<"you have "<<quarters<<" quarters "<< dimes<<" dimes "<<nickels<<" nickels and "<<pennies<<" pennies"<<endl;
+    LaunchHumanCannonball(182,42);
+    cout<<"the human cannonball traveled "<<LaunchHumanCannonball(182,42)<<"meters"<<endl;
+}
+
 
