@@ -46,17 +46,17 @@ string Goldilocks(string item, int number) {
   }
   if(item=="chair")
   {
-  if (number==1)
-  {
-    return("This chair is too big");
-  }
-  else if(number==2)
-  {
-    return("This chair is too small");
-  }
-  else
-  {
-    return("This chair is just right");
+    if (number==1)
+    {
+      return("This chair is too big");
+    }
+    else if(number==2)
+    {
+      return("This chair is too small");
+    }
+    else
+    {
+      return("This chair is just right");
   }
   }
   else
@@ -90,9 +90,68 @@ string Goldilocks(string item, int number) {
  *               0 if invalud inputs
  */
 int RockScissorPaper(char player_one, char player_two) {
-  // YOU MUST USE A SWITCH IN THIS FUNCTION
-  // CODE HERE
+  player_one=toupper(player_one);
+  player_two=toupper(player_two);
+  switch(player_one)
+ { case 'R':
+ 
+  switch (player_two)
+  {
+  case 'R':
+    return 3;
+    break;
+  case 'P':
+    return 2;
+    break;
+  case 'S':
+    return 1;
+    break;
+  default:
+ return 0;
+  break;
 }
+  break;
+  
+  case'P':
+   switch (player_two)
+  {
+  case 'R':
+    return 1;
+    break;
+  case 'P':
+    return 3;
+    break;
+  case 'S':
+    return 2;
+    break;
+  default:
+ return 0;
+    break;
+  }
+break;
+
+  case'S':
+   switch (player_two)
+   {
+  case 'R':
+    return 2;
+    break;
+  case 'P':
+    return 1;
+    break;
+  case 'S':
+    return 3;
+    break;
+  default:
+  return 0;
+  break;
+   }
+   break;
+  return 0;
+  break;
+}
+}
+
 
 /*
  * Return the input string with all characters converted to lowercase.
@@ -119,8 +178,34 @@ string ToUpper(string input) {
   }
   return input;
 }
-int main()
-{
-  cout<<ToUpper("BearS")<<endl;
-  return 0;
-}
+// int main()
+// {
+//   string iteminput;
+//   string item;
+//   int number;
+//   char player1;
+//   char player2;
+//   cout<<"what item does goldilocks use"<<endl;
+//   cin>>item;
+//   cout<<"what number for the goldilocks story?"<<endl;
+//   cin>>number;
+  
+// iteminput=ToLower(item);
+// cout<< Goldilocks(iteminput,number)<<endl;
+// cout<<"Player 1 what do you want to pick"<<endl;
+// cin>>(player1);
+ 
+// cout<<"Player 2 what do you want to pick"<<endl;
+// cin>>(player2);
+ 
+// cout<<RockScissorPaper(player1,player2)<<endl;
+// if (RockScissorPaper(player1,player2)==1)
+// {cout<<player1<<" beats "<<player2<<" Player 1 wins!"<<endl;}
+// else if(RockScissorPaper(player1,player2)==2)
+// {cout<<player2<<" beats "<<player1<<" Player 2 wins!"<<endl;}
+// else if(RockScissorPaper(player1,player2)==3)
+// {cout<<"Draw. you both picked "<<player1<<endl;}
+// else 
+// {cout<<"invalid response"<<endl;}
+// return 0;
+// }
