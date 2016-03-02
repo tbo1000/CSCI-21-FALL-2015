@@ -1,6 +1,6 @@
 /*
  * Name        : lab_9.cpp
- * Author      : FILL IN
+ * Author      : Tyler O'Guinn
  * Description : Building a Spaceship Class
  */
 #include "lab_9.h"
