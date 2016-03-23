@@ -6,7 +6,7 @@
 
 #include "bank.h"
 
-class Credit:public Bank
+class Credit: public Bank
 {
  public:
  Credit(double balance,double interest_rate,string pin);

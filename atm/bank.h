@@ -13,11 +13,13 @@
 #include <iomanip>
 using namespace std;
 
+#ifndef BANK_H
+#define BANK_H
 //class bank. the base account class
 class Bank
 {
-    public:
-    //constructor 1. sets interest rate and balance
+ public:
+ //constructor 1. sets interest rate and balance
  Bank(double balance,double interest_rate);
  //destructor
  virtual ~Bank();
@@ -30,9 +32,10 @@ class Bank
  //accessor for interest rate
  double get_interest_rate();
  
-  private:
+  protected:
   double balance_;
   double interest_rate_;
 };
 
+#endif
 #endif

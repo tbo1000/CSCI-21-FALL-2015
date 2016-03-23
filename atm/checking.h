@@ -10,7 +10,7 @@
  #include "bank.h"
  
  //class for checking accounts
- class Checking:public Bank
+ class Checking: public Bank
  {
   public:
      //constructor to set values for balance interest rate and pin
