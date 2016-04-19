@@ -40,7 +40,7 @@ void SLList::InsertTail(int tail)
     else
     {
     SLNode* node = new SLNode(tail);
-    tail_->set_next_node(node);
+    tail_ ->set_next_node(node);
     tail_=node;
     size_++;
     }
