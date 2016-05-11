@@ -1,5 +1,5 @@
-#ifndef BST_NODE_H
-#define BST_NODE_H
+#ifndef BSTNODE_H
+#define BSTNODE_H
 
 #include <iostream>
 using namespace std;
