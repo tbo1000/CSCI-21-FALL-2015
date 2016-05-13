@@ -13,7 +13,7 @@ class Credit: public Bank
  virtual ~Credit();
  
  void Withdraw(double request);
- void PayBill(double input);
+ bool PayBill(double input);
  bool Access(string pin);
  
  private:

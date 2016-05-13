@@ -43,3 +43,8 @@
      result = Bank::get_balance()*((1.00 +Bank::get_interest_rate())^years);
      return result;
  }
+ 
+ int Savings::get_withdraw()
+ {
+     return withdraw_;
+ }

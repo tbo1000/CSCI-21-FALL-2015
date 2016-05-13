@@ -9,7 +9,7 @@
  
  #include "bank.h"
  
- class Savings : public Bank
+ class Savings: public Bank
  {
   public:
      Savings(double balance,double interest_rate,int withdraw);
